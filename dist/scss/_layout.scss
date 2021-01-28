@@ -1,9 +1,32 @@
+@import "./utils";
+
+
 header {
     h1 {
-        align-items: center;
+        display: flex;
+        justify-content: center;
         img {
             height: 30px;
             width: 165px;
+        }
+    }
+}
+
+footer {
+    padding: 10px;
+    background-color:#353535;
+    color: white;
+
+    h1 {
+        @include titre;
+        margin-right: 18px
+    }
+
+    li {
+        list-style: none;
+        margin-bottom: 15px;
+        i {
+            margin-right: 15px;
         }
     }
 }
