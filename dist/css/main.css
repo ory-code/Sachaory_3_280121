@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto' 'shrikhand', sans-serif;
   margin: 0;
 }
 
@@ -58,6 +58,10 @@ footer li {
 
 footer li i {
   margin-right: 15px;
+}
+
+main {
+  font-family: 'roboto';
 }
 
 main .booking-menu .booking-menu-header {
@@ -230,5 +234,111 @@ main .restaurants .figure-restaurants .figure-restaurants-icon {
 
 main .restaurants .figure-restaurants .figure-restaurants-icon i {
   font-size: 20px;
+}
+
+footer {
+  font-family: 'roboto';
+}
+
+body {
+  font-family: roboto;
+  font-family: shrikhand;
+}
+
+header h1 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+header h1 .fa-arrow-left {
+  margin-right: 15px;
+}
+
+.page-image img {
+  width: 100%;
+  height: auto;
+}
+
+.menu-page {
+  position: relative;
+  margin-top: -90px;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f6f6f6;
+  padding-bottom: 15px;
+}
+
+.menu-page h1 {
+  padding-top: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-weight: 400;
+}
+
+.menu-page h2 {
+  font-family: roboto;
+  font-weight: 300;
+  border-bottom: solid #99e2d0;
+  width: 40px;
+  margin-left: 15px;
+}
+
+.menu-page .btn-menu-text {
+  font-family: roboto;
+  background-color: white;
+  text-align: start;
+  width: 350px;
+  margin: 15px;
+  padding: 5px;
+  border-radius: 1rem 1rem 1rem 1rem;
+  border: none;
+}
+
+.menu-page .btn-menu-text h3 {
+  margin-left: 10px;
+}
+
+.menu-page .btn-menu-text span {
+  margin-left: 10px;
+}
+
+.menu-page .btn-menu-text p {
+  margin-left: 280px;
+  font-size: 20px;
+  margin-top: -50px;
+}
+
+.menu-page .btn-menu-text .btn-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0rem 1rem 1rem 0rem;
+  border: none;
+  background-color: #99e2d0;
+  margin-left: 250px;
+  height: 85px;
+  margin-top: -75px;
+}
+
+.menu-page .btn-menu-text .btn-icon .fa-check-circle {
+  color: white;
+  font-size: 45px;
 }
 /*# sourceMappingURL=main.css.map */

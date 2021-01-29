@@ -1,0 +1,92 @@
+@import "./utils";
+
+
+body {
+  font-family: roboto;
+  font-family: shrikhand;
+}
+
+
+
+header {
+  h1 {
+    align-items: center;
+    text-align: center;
+    
+    .fa-arrow-left {
+      margin-right: 15px;
+    }
+  }
+}
+.page-image {
+    img {
+    
+      width:100%;
+      height: auto;
+    }
+    
+}
+
+.menu-page {
+  position: relative;
+  margin-top: -90px;
+  border-radius: 2rem 2rem 0 0;
+  background-color: $grey-color;
+  padding-bottom: 15px;
+  
+  h1 {
+    padding-top: 25px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 400;
+  }
+  h2 {
+    @include titre-menu;
+    margin-left:15px;
+
+  }
+  .btn-menu-text  {
+    @include texte;
+    background-color: white;
+    text-align: start;
+    width: 350px;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 1rem 1rem 1rem 1rem;
+    border: none;
+    h3 {
+      margin-left: 10px;
+    }
+    span {
+      margin-left: 10px;
+    }
+   
+    p  {
+      margin-left: 280px;
+      font-size: 20px;
+      margin-top: -50px;
+    }
+    .btn-icon {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      border-radius: 0rem 1rem 1rem 0rem;
+      border: none;
+      background-color: $tertiaire-color;
+      margin-left: 250px;
+      height: 85px;
+      margin-top: -75px;
+      
+      .fa-check-circle {
+        color: white;
+        font-size: 45px;
+       
+      }
+      
+    }
+  }
+}
