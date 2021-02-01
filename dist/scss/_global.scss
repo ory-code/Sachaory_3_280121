@@ -1,13 +1,41 @@
+@import "./utils";
+
+
+
 body {
-    font-family: 'Roboto' 'shrikhand', sans-serif;
+    font-family: 'Roboto''shrikhand', sans-serif;
     margin: 0;
 }
 
-a:link { text-decoration: none; color: black;}
-a:visited {color:initial;}
-a:hover {text-decoration: none;}
-a:active {color:initial;}
+a:link {
+    text-decoration: none;
+    color: black;
+}
 
-input {
-        font-size: 20px;
+a:visited {
+    color: initial;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    color: initial;
+}
+a:hover {
+    transform: scale(1.2)
+
+}
+main {
+
+        .figure-restaurants-icon {
+
+
+
+            .fa-heart {
+                cursor: pointer;
+                color: linear-gradient(top, #ff79da, #9356DC);
+            }
+}
 }
