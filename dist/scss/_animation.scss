@@ -1,0 +1,19 @@
+@keyframes apparition {
+    0% {
+        transform: scale(0)
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+
+
+    @keyframes check-slide {
+        0% {
+            transform: translateZ(25px);
+        }
+        100% {
+            transform: translateZ(0px);
+        }
+    }

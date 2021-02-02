@@ -25,11 +25,6 @@ a:hover {
           transform: scale(1.2);
 }
 
-main .figure-restaurants-icon .fa-heart {
-  cursor: pointer;
-  color: linear-gradient(top, #ff79da, #9356DC);
-}
-
 header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -229,6 +224,16 @@ main .restaurants .figure-restaurants img {
   border-radius: 1.5rem 1.5rem 0 0;
 }
 
+main .restaurants .figure-restaurants span {
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: .5rem;
+  border-radius: 5px;
+  height: 18px;
+  margin-top: -220px;
+  margin-left: 230px;
+}
+
 main .restaurants .figure-restaurants .figure-restaurants-text {
   margin-left: 15px;
 }
@@ -237,13 +242,14 @@ main .restaurants .figure-restaurants .figure-restaurants-text h2 {
   font-size: 18px;
 }
 
-main .restaurants .figure-restaurants .figure-restaurants-icon {
+main .restaurants .figure-restaurants .hearth-icon {
   margin-left: 280px;
   margin-top: -35px;
+  font-size: 20px;
 }
 
-main .restaurants .figure-restaurants .figure-restaurants-icon i {
-  font-size: 20px;
+main .restaurants .figure-restaurants .hearth-icon .hearth-icon:hover {
+  color: #9356DC;
 }
 
 footer {
@@ -295,6 +301,14 @@ header h1 .fa-arrow-left {
   font-weight: 400;
 }
 
+.menu-page h1 .fa-heart {
+  cursor: pointer;
+}
+
+.menu-page h1 .fa-heart:hover {
+  color: #9356DC;
+}
+
 .menu-page h2 {
   font-family: roboto;
   font-weight: 300;
@@ -304,8 +318,14 @@ header h1 .fa-arrow-left {
 }
 
 .menu-page .btn-menu {
-  -webkit-transform: translateY(45px);
-          transform: translateY(45px);
+  -webkit-animation: apparition 1.5s;
+          animation: apparition 1.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 .menu-page .btn-menu .btn-menu-text {
@@ -325,6 +345,7 @@ header h1 .fa-arrow-left {
 
 .menu-page .btn-menu .btn-menu-text span {
   margin-left: 10px;
+  text-overflow: ellipsis;
 }
 
 .menu-page .btn-menu .btn-menu-text p {
@@ -417,6 +438,11 @@ header h1 .fa-arrow-left {
     -webkit-transform: scale(1.5);
             transform: scale(1.5);
   }
+  .menu-page {
+    margin-top: -1039px;
+    border-radius: 0px;
+    opacity: 0.9;
+  }
   .menu-page h1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -453,6 +479,50 @@ header h1 .fa-arrow-left {
   .menu-page .menu-page-content .btn-menu:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+
+@-webkit-keyframes apparition {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes apparition {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes check-slide {
+  0% {
+    -webkit-transform: translateZ(25px);
+            transform: translateZ(25px);
+  }
+  100% {
+    -webkit-transform: translateZ(0px);
+            transform: translateZ(0px);
+  }
+}
+
+@keyframes check-slide {
+  0% {
+    -webkit-transform: translateZ(25px);
+            transform: translateZ(25px);
+  }
+  100% {
+    -webkit-transform: translateZ(0px);
+            transform: translateZ(0px);
   }
 }
 /*# sourceMappingURL=main.css.map */
