@@ -23,8 +23,18 @@ a:hover {
 a:active {
     color: initial;
 }
-a:hover {
-    transform: scale(1.2)
 
+a:hover {
+    transform: scale(1.05)
 }
 
+.hearth-icon {
+    cursor: pointer;
+    margin-left: 280px;
+    margin-top: -43px;
+    font-size: 25px;
+}
+
+ .fas:hover {
+    color: $premiere-color;
+ }

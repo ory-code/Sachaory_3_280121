@@ -21,8 +21,19 @@ a:active {
 }
 
 a:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.hearth-icon {
+  cursor: pointer;
+  margin-left: 280px;
+  margin-top: -43px;
+  font-size: 25px;
+}
+
+.fas:hover {
+  color: #9356DC;
 }
 
 header h1 {
@@ -224,7 +235,7 @@ main .restaurants .figure-restaurants img {
   border-radius: 1.5rem 1.5rem 0 0;
 }
 
-main .restaurants .figure-restaurants span {
+main .restaurants .figure-restaurants .nouveau-info {
   background-color: #99e2d0;
   color: #1b6150;
   padding: .5rem;
@@ -240,16 +251,6 @@ main .restaurants .figure-restaurants .figure-restaurants-text {
 
 main .restaurants .figure-restaurants .figure-restaurants-text h2 {
   font-size: 18px;
-}
-
-main .restaurants .figure-restaurants .hearth-icon {
-  margin-left: 280px;
-  margin-top: -35px;
-  font-size: 20px;
-}
-
-main .restaurants .figure-restaurants .hearth-icon .hearth-icon:hover {
-  color: #9356DC;
 }
 
 footer {
@@ -305,7 +306,7 @@ header h1 .fa-arrow-left {
   cursor: pointer;
 }
 
-.menu-page h1 .fa-heart:hover {
+.menu-page h1 .fa-heart:checked {
   color: #9356DC;
 }
 
@@ -326,6 +327,7 @@ header h1 .fa-arrow-left {
           animation-fill-mode: both;
   -webkit-transform: scale(0);
           transform: scale(0);
+  cursor: pointer;
 }
 
 .menu-page .btn-menu .btn-menu-text {

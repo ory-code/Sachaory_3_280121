@@ -1,12 +1,9 @@
 @import "./utils";
 
-
 body {
   font-family: roboto;
   font-family: shrikhand;
 }
-
-
 
 header {
   h1 {
@@ -21,11 +18,9 @@ header {
 
 .page-image {
   img {
-
     width: 100%;
     height: auto;
   }
-
 }
 
 .menu-page {
@@ -34,7 +29,7 @@ header {
   border-radius: 2rem 2rem 0 0;
   background-color: $grey-color;
   padding-bottom: 15px;
-  
+
   h1 {
     font-family: shrikhand;
     padding-top: 25px;
@@ -43,11 +38,13 @@ header {
     display: flex;
     justify-content: space-around;
     font-weight: 400;
+
     .fa-heart {
       cursor: pointer;
     }
-    .fa-heart:hover {
-      color:$premiere-color;
+
+    .fa-heart:checked {
+      color: $premiere-color;
     }
   }
 
@@ -59,9 +56,10 @@ header {
 
   .btn-menu {
     animation: apparition 1.5s;
-    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-timing-function: cubic-bezier(.5, 1.58, .34, .82);
     animation-fill-mode: both;
     transform: scale(0);
+    cursor: pointer;
 
     .btn-menu-text {
       @include texte;
@@ -100,6 +98,7 @@ header {
         margin-left: 250px;
         height: 85px;
         margin-top: -75px;
+
         .fa-check-circle {
           color: white;
           font-size: 45px;
