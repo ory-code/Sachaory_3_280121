@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto" "shrikhand", sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
@@ -23,17 +23,6 @@ a:active {
 a:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-}
-
-.hearth-icon {
-  cursor: pointer;
-  margin-left: 280px;
-  margin-top: -43px;
-  font-size: 25px;
-}
-
-.fas:hover {
-  color: #9356DC;
 }
 
 header h1 {
@@ -70,10 +59,6 @@ footer li {
 
 footer li i {
   margin-right: 15px;
-}
-
-main {
-  font-family: 'roboto';
 }
 
 main .booking-menu .booking-menu-header {
@@ -245,6 +230,10 @@ main .restaurants .figure-restaurants .nouveau-info {
   margin-left: 230px;
 }
 
+main .restaurants .figure-restaurants .figure-restaurants-caption {
+  padding-bottom: 35px;
+}
+
 main .restaurants .figure-restaurants .figure-restaurants-text {
   margin-left: 15px;
 }
@@ -253,14 +242,34 @@ main .restaurants .figure-restaurants .figure-restaurants-text h2 {
   font-size: 18px;
 }
 
+.hearth-icon {
+  cursor: pointer;
+  margin-left: 280px;
+  margin-top: -43px;
+  font-size: 25px;
+  position: relative;
+}
+
+.hearth-icon .fa-heart {
+  position: absolute;
+}
+
+.hearth-icon .far:hover {
+  opacity: 1;
+}
+
+.hearth-icon .fas {
+  opacity: 0;
+}
+
+.hearth-icon .fas:hover {
+  opacity: 1;
+  color: #9356DC;
+}
+
 footer {
   font-family: 'roboto';
   cursor: pointer;
-}
-
-body {
-  font-family: roboto;
-  font-family: shrikhand;
 }
 
 header h1 {
@@ -272,6 +281,7 @@ header h1 {
 
 header h1 .fa-arrow-left {
   margin-right: 15px;
+  color: black;
 }
 
 .page-image img {
@@ -300,13 +310,21 @@ header h1 .fa-arrow-left {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   font-weight: 400;
+  position: relative;
 }
 
 .menu-page h1 .fa-heart {
   cursor: pointer;
+  position: absolute;
+  right: 400px;
 }
 
-.menu-page h1 .fa-heart:checked {
+.menu-page h1 .fas {
+  opacity: 0;
+}
+
+.menu-page h1 .fas:hover {
+  opacity: 1;
   color: #9356DC;
 }
 

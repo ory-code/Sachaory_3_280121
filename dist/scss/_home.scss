@@ -2,8 +2,6 @@
 
 
 main {
-    font-family: 'roboto';
-
     .booking-menu {
         .booking-menu-header {
             margin-top: 15px;
@@ -149,6 +147,10 @@ main {
                 margin-left: 230px;
             }
 
+            .figure-restaurants-caption {
+                padding-bottom: 35px;
+            }
+
             .figure-restaurants-text {
                 margin-left: 15px;
 
@@ -159,6 +161,42 @@ main {
         }
     }
 }
+
+
+
+
+
+
+.hearth-icon {
+    cursor: pointer;
+    margin-left: 280px;
+    margin-top: -43px;
+    font-size: 25px;
+    position: relative;
+
+    .fa-heart {
+        position: absolute;
+    }
+
+    .far:hover {
+        opacity: 1;
+    }
+
+
+    .fas {
+        opacity: 0;
+    }
+
+    .fas:hover {
+        opacity: 1;
+        color: $premiere-color;
+    }
+}
+
+
+
+
+
 
 footer {
     font-family: 'roboto';

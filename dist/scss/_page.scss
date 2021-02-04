@@ -1,9 +1,6 @@
 @import "./utils";
 
-body {
-  font-family: roboto;
-  font-family: shrikhand;
-}
+
 
 header {
   h1 {
@@ -12,6 +9,7 @@ header {
 
     .fa-arrow-left {
       margin-right: 15px;
+      color: black;
     }
   }
 }
@@ -38,16 +36,25 @@ header {
     display: flex;
     justify-content: space-around;
     font-weight: 400;
+    position: relative;
 
     .fa-heart {
       cursor: pointer;
+      position: absolute;
+      right: 400px;
     }
-
-    .fa-heart:checked {
+    .fas {
+      opacity: 0;
+    }
+    .fas:hover{
+      opacity: 1;
       color: $premiere-color;
     }
+    
+    
+     
+    
   }
-
   h2 {
     @include titre-menu;
     margin-left: 15px;
