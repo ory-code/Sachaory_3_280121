@@ -68,6 +68,35 @@ header {
     transform: scale(0);
     cursor: pointer;
 
+    
+      &:hover{
+        .description{
+          animation: prix-effect 1s; 
+             margin-right: 15%;
+            
+        }
+  
+        .btn-icon{
+          animation: background-effect 1s;
+          display: flex;
+          opacity: 1;
+        }			
+  
+        .fa-check-circle{
+            animation: check-effect 1s 0.2s;
+        }
+
+        
+        p{
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          
+        }	
+      }
+      }
+    }
+
     .btn-menu-text {
       @include texte;
       background-color: white;
@@ -77,21 +106,24 @@ header {
       padding: 5px;
       border-radius: 1rem 1rem 1rem 1rem;
       border: none;
+      
+      
 
       h3 {
         margin-left: 10px;
       }
-
-      span {
+      .description{
+        display: flex;
+        justify-content: space-between;
         margin-left: 10px;
+        margin-right: 10px;
         text-overflow: ellipsis;
+       
       }
 
-      p {
-        margin-left: 280px;
-        font-size: 20px;
-        margin-top: -50px;
-      }
+     
+
+     
 
       .btn-icon {
         display: flex;
@@ -103,8 +135,13 @@ header {
         border: none;
         background-color: $tertiaire-color;
         margin-left: 250px;
-        height: 85px;
-        margin-top: -75px;
+        height: 109px;
+        margin-top: -114px;
+        right: -5px;
+        position: relative;
+        opacity: 0;
+        overflow: hidden;
+        
 
         .fa-check-circle {
           color: white;
@@ -114,5 +151,4 @@ header {
 
       }
     }
-  }
-}
+  

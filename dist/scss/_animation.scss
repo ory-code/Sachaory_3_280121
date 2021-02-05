@@ -19,3 +19,35 @@
         transform: translateZ(0px);
     }
 }
+
+
+@keyframes prix-effect{
+    0%{
+      margin-right: 0%;
+    }
+  
+    100%{
+      margin-right: 35%;
+    }
+  }
+  
+  @keyframes check-effect{
+    0%{
+      transform: rotate(0deg);
+    }
+  
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  @keyframes background-effect{
+    0%{
+      transform: translateX(100px);
+    }
+  
+    100%{
+      transform: translatex(0px);
+    }
+  }
