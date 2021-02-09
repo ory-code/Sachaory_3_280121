@@ -38,6 +38,7 @@
         .restaurants {
             h1 {
                 margin: 30px;
+               
             }
 
             .restaurant-content {
@@ -46,6 +47,13 @@
             }
 
            
+        }
+        .menu-page {
+            h1{
+                .fa-heart{
+                    right: 400px;
+                }
+            }
         }
 
 

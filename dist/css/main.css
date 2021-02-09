@@ -307,16 +307,19 @@ header h1 .fa-arrow-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  font-weight: 400;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-weight: 50;
   position: relative;
+  margin-left: 15px;
 }
 
 .menu-page h1 .fa-heart {
   cursor: pointer;
   position: absolute;
-  right: 400px;
+  right: 50px;
+  z-index: 1;
 }
 
 .menu-page h1 .fas {
@@ -346,12 +349,15 @@ header h1 .fa-arrow-left {
   -webkit-transform: scale(0);
           transform: scale(0);
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .menu-page .btn-menu:hover .description {
   -webkit-animation: prix-effect 1s;
           animation: prix-effect 1s;
   margin-right: 15%;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .menu-page .btn-menu:hover .btn-icon {
@@ -369,17 +375,24 @@ header h1 .fa-arrow-left {
 }
 
 .menu-page .btn-menu:hover p {
-  text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 
 .btn-menu-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
   font-family: roboto;
   background-color: white;
   text-align: start;
   width: 350px;
-  margin: 15px;
+  margin: 10px;
   padding: 5px;
   border-radius: 1rem 1rem 1rem 1rem;
   border: none;
@@ -398,6 +411,9 @@ header h1 .fa-arrow-left {
           justify-content: space-between;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.btn-menu-text .description .text {
   text-overflow: ellipsis;
 }
 
@@ -470,6 +486,9 @@ header h1 .fa-arrow-left {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  main .menu-page h1 .fa-heart {
+    right: 400px;
   }
   footer {
     display: -webkit-box;

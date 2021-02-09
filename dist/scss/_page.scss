@@ -34,27 +34,39 @@ header {
     align-items: center;
     text-align: center;
     display: flex;
-    justify-content: space-around;
-    font-weight: 400;
+    justify-content: flex-start;
+    font-weight: 50;
     position: relative;
+    margin-left: 15px;
 
     .fa-heart {
       cursor: pointer;
       position: absolute;
-      right: 400px;
+      right: 50px;
+      z-index: 1;
     }
+
     .fas {
       opacity: 0;
+
+      &:hover {
+        opacity: 1;
+        color: $premiere-color;
+      }
     }
-    .fas:hover{
-      opacity: 1;
-      color: $premiere-color;
-    }
-    
-    
-     
-    
+
+
+
+
+
+
+
+
+
+
+
   }
+
   h2 {
     @include titre-menu;
     margin-left: 15px;
@@ -67,88 +79,85 @@ header {
     animation-fill-mode: both;
     transform: scale(0);
     cursor: pointer;
+    margin-bottom: 10px;
 
-    
-      &:hover{
-        .description{
-          animation: prix-effect 1s; 
-             margin-right: 15%;
-            
-        }
-  
-        .btn-icon{
-          animation: background-effect 1s;
-          display: flex;
-          opacity: 1;
-        }			
-  
-        .fa-check-circle{
-            animation: check-effect 1s 0.2s;
-        }
 
-        
-        p{
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          overflow: hidden;
-          
-        }	
+    &:hover {
+      .description {
+        animation: prix-effect 1s;
+        margin-right: 15%;
+        animation-fill-mode: both;
       }
-      }
-    }
-
-    .btn-menu-text {
-      @include texte;
-      background-color: white;
-      text-align: start;
-      width: 350px;
-      margin: 15px;
-      padding: 5px;
-      border-radius: 1rem 1rem 1rem 1rem;
-      border: none;
-      
-      
-
-      h3 {
-        margin-left: 10px;
-      }
-      .description{
-        display: flex;
-        justify-content: space-between;
-        margin-left: 10px;
-        margin-right: 10px;
-        text-overflow: ellipsis;
-       
-      }
-
-     
-
-     
 
       .btn-icon {
+        animation: background-effect 1s;
         display: flex;
-        text-align: center;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        border-radius: 0rem 1rem 1rem 0rem;
-        border: none;
-        background-color: $tertiaire-color;
-        margin-left: 250px;
-        height: 109px;
-        margin-top: -114px;
-        right: -5px;
-        position: relative;
-        opacity: 0;
-        overflow: hidden;
+        opacity: 1;
+      }
+
+      .fa-check-circle {
+        animation: check-effect 1s 0.2s;
+      }
+
+
+      p {
         
-
-        .fa-check-circle {
-          color: white;
-          font-size: 45px;
-
-        }
+        white-space:nowrap;
+        overflow: hidden;
 
       }
     }
-  
+  }
+}
+
+.btn-menu-text {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  @include texte;
+  background-color: white;
+  text-align: start;
+  width: 350px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 1rem 1rem 1rem 1rem;
+  border: none;
+  h3 {
+    margin-left: 10px;
+  }
+  .description {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    .text{
+      text-overflow: ellipsis;
+    }
+  }
+
+  .btn-icon {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 0rem 1rem 1rem 0rem;
+    border: none;
+    background-color: $tertiaire-color;
+    margin-left: 250px;
+    height: 109px;
+    margin-top: -114px;
+    right: -5px;
+    position: relative;
+    opacity: 0;
+    overflow: hidden;
+
+
+    .fa-check-circle {
+      color: white;
+      font-size: 45px;
+
+    }
+
+  }
+}

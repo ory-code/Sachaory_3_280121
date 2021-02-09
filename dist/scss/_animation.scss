@@ -1,11 +1,11 @@
 @keyframes apparition {
-    0% {
-        transform: scale(0)
-    }
+  0% {
+      transform: scale(0)
+  }
 
-    100% {
-        transform: scale(1);
-    }
+  100% {
+      transform: scale(1);
+  }
 }
 
 
@@ -28,7 +28,9 @@
   
     100%{
       margin-right: 35%;
+      
     }
+    
   }
   
   @keyframes check-effect{
