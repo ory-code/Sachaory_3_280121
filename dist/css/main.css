@@ -62,10 +62,16 @@ footer li i {
 }
 
 main .booking-menu .booking-menu-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 15px;
   margin-bottom: 15px;
   background-color: #eaeaea;
   height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .booking-menu .booking-menu-header form {
