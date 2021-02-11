@@ -63,6 +63,7 @@ main {
         display: flex;
         flex-direction: column;
         margin-left: 18px;
+        align-items: center;
 
     }
 
@@ -118,6 +119,11 @@ main {
         h1 {
             margin-left: 15px;
             font-size: 25px;
+        }
+        .restaurant-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .figure-restaurants {

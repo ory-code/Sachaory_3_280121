@@ -1,5 +1,5 @@
 
-@media (min-width: 700px) {
+@media (min-width: 1440px) {
     main {
         .booking-menu {
             .booking-menu-header {
@@ -43,6 +43,7 @@
 
             .restaurant-content {
                 display: flex;
+                flex-direction: row;
                 justify-content: space-around;
             }
 
