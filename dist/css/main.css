@@ -68,7 +68,7 @@ main .booking-menu .booking-menu-header {
   height: 40px;
 }
 
-main .booking-menu .booking-menu-header h1 {
+main .booking-menu .booking-menu-header form {
   padding: 7px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
