@@ -7,10 +7,18 @@ body {
     margin: 0;
 }
 
+
 a:link {
     text-decoration: none;
+    
+}
+a:link:not(.mail-contact){
     color: black;
 }
+.mail-contact{
+    color: white;
+}
+
 
 a:visited {
     color: initial;
@@ -27,6 +35,8 @@ a:active {
 a:hover {
     transform: scale(1.05)
 }
+
+
 
 
 
