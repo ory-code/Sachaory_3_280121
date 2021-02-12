@@ -52,7 +52,7 @@ footer {
   color: white;
 }
 
-footer h1 {
+footer h2 {
   font-family: shrikhand;
   font-size: 25px;
   color: white;
@@ -66,6 +66,68 @@ footer li {
 
 footer li i {
   margin-right: 15px;
+}
+
+.loading {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#ff79da));
+  background: linear-gradient(top, #9356DC, #ff79da);
+  -webkit-animation: loader 0.01s;
+          animation: loader 0.01s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  z-index: 10000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loading__item {
+  height: 3rem;
+  width: 4rem;
+  border-radius: 0.3rem;
+  -webkit-animation: jump 1s;
+          animation: jump 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.loading__itemcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.loading__item--1 {
+  background-color: #9356DC;
+}
+
+.loading__item--2 {
+  background-color: #ff79da;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+.loading__item--3 {
+  background-color: #99e2d0;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 main .booking-menu .booking-menu-header {
@@ -326,7 +388,7 @@ header h1 .fa-arrow-left {
   padding-bottom: 15px;
 }
 
-.menu-page h1 {
+.menu-page h2 {
   font-family: shrikhand;
   padding-top: 25px;
   -webkit-box-align: center;
@@ -344,18 +406,18 @@ header h1 .fa-arrow-left {
   margin-left: 15px;
 }
 
-.menu-page h1 .fa-heart {
+.menu-page h2 .fa-heart {
   cursor: pointer;
   position: absolute;
   right: 50px;
   z-index: 1;
 }
 
-.menu-page h1 .fas {
+.menu-page h2 .fas {
   opacity: 0;
 }
 
-.menu-page h1 .fas:hover {
+.menu-page h2 .fas:hover {
   opacity: 1;
   color: #9356DC;
 }
@@ -376,7 +438,7 @@ header h1 .fa-arrow-left {
           align-items: center;
 }
 
-.menu-page h2 {
+.menu-page h3 {
   font-family: roboto;
   font-weight: 300;
   border-bottom: solid #99e2d0;
@@ -442,7 +504,7 @@ header h1 .fa-arrow-left {
   border: none;
 }
 
-.btn-menu-text h3 {
+.btn-menu-text h4 {
   margin-left: 10px;
 }
 
@@ -539,7 +601,10 @@ header h1 .fa-arrow-left {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  main .menu-page h1 .fa-heart {
+  main .menu-page h2 {
+    margin-left: 125px;
+  }
+  main .menu-page h2 .fa-heart {
     right: 400px;
   }
   footer {
@@ -549,10 +614,10 @@ header h1 .fa-arrow-left {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  footer h1 {
+  footer h2 {
     font-size: 40px;
   }
-  footer h1:hover {
+  footer h2:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
@@ -601,6 +666,58 @@ header h1 .fa-arrow-left {
   .menu-page .menu-page-content .btn-menu:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+
+@-webkit-keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@-webkit-keyframes jump {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(0.5rem);
+            transform: translateY(0.5rem);
+  }
+  75% {
+    -webkit-transform: translateY(-0.5rem);
+            transform: translateY(-0.5rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes jump {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(0.5rem);
+            transform: translateY(0.5rem);
+  }
+  75% {
+    -webkit-transform: translateY(-0.5rem);
+            transform: translateY(-0.5rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 

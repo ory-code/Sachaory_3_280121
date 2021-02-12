@@ -50,7 +50,8 @@
            
         }
         .menu-page {
-            h1{
+            h2{
+                margin-left: 125px;
                 .fa-heart{
                     right: 400px;
                 }
@@ -64,11 +65,11 @@
         display: flex;
         justify-content: space-around;
 
-        h1 {
+        h2 {
             font-size: 40px;
         }
 
-        h1:hover {
+        h2:hover {
             transform: scale(1.2);
         }
 
