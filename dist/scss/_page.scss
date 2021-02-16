@@ -52,6 +52,7 @@ header {
       &:hover {
         opacity: 1;
         color: $premiere-color;
+        transition: 1s;
       }
     }
   }
@@ -156,7 +157,7 @@ header {
 
     .fa-check-circle {
       color: white;
-      font-size: 45px;
+      font-size: 35px;
 
     }
 

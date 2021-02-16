@@ -356,6 +356,8 @@ main .restaurants .figure-restaurants .figure-restaurants-text h2 {
 .hearth-icon .fas:hover {
   opacity: 1;
   color: #9356DC;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 footer {
@@ -420,6 +422,8 @@ header h1 .fa-arrow-left {
 .menu-page h2 .fas:hover {
   opacity: 1;
   color: #9356DC;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .menu-page .menu-page-content .btn-menu {
@@ -554,7 +558,7 @@ header h1 .fa-arrow-left {
 
 .btn-menu-text .btn-icon .fa-check-circle {
   color: white;
-  font-size: 45px;
+  font-size: 35px;
 }
 
 @media (min-width: 1440px) {

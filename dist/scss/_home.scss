@@ -252,6 +252,8 @@ main {
     .fas:hover {
         opacity: 1;
         color: $premiere-color;
+        transition: 1s;
+    
     }
 }
 
